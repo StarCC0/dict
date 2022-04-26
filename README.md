@@ -9,9 +9,10 @@ Dictionary for the Traditional-Simplified Chinese conversion framework
 ```json
 {
   "cn": ["STCharacters", "STPhrases"],
+  "hk": ["HKVariantsRev", "HKVariantsRevPhrases"],
   "tw": ["TWVariantsRev", "TWVariantsRevPhrases"],
   "twp": ["TWVariantsRev", "TWVariantsRevPhrases", "TWPhrasesRev"],
-  "hk": ["HKVariantsRev", "HKVariantsRevPhrases"],
+  "cnt": ["CNTradVariantsRev", "CNTradRevPhrases"],
   "jp": ["JPVariantsRev", "JPShinjitaiCharacters", "JPShinjitaiPhrases"]
 }
 ```
@@ -24,6 +25,7 @@ Dictionary for the Traditional-Simplified Chinese conversion framework
   "hk": ["HKVariants"],
   "tw": ["TWVariants"],
   "twp": ["TWVariants", "TWPhrasesIT", "TWPhrasesName", "TWPhrasesOther"],
+  "cnt": ["CNTradVariants", "CNTradPhrases"],
   "jp": ["JPVariants"]
 }
 ```
@@ -34,8 +36,13 @@ Dictionary for the Traditional-Simplified Chinese conversion framework
 - `tw`: Traditional Chinese (Taiwan)
 - `twp`: Traditional Chinese (Taiwan, with phrase conversion)
 - `hk`: Traditional Chinese (Hong Kong)
+- `cnt`: Traditional Chinese (Mainland China)
 - `jp`: Japanese Shinjitai
+
+The support of `cnt` is currently experimental.
 
 ## Source
 
-Currently a mirror of [nk2028/opencc-data](https://github.com/nk2028/opencc-data).
+Main dictionary is a mirror of [nk2028/opencc-data](https://github.com/nk2028/opencc-data), distributed under the Apache 2.0 License.
+
+The experimental `cnt` data is from [mrhso/OpenCC_CN-draft](https://github.com/mrhso/OpenCC_CN-draft).
